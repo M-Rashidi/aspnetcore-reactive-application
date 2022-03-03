@@ -1,6 +1,4 @@
-﻿using System;
-using System.Text;
-using System.Threading;
+﻿using System.Text;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
@@ -8,9 +6,9 @@ namespace consumer
 {
     class Program
     {
-        private static IConnection _connection;
-        private static IModel _channel;
-        private static ManualResetEvent _resetEvent = new ManualResetEvent(false);
+        private static IConnection? _connection;
+        private static IModel? _channel;
+        private static readonly ManualResetEvent _resetEvent = new ManualResetEvent(false);
         private static readonly string url = "amqp://guest:guest@localhost/%2f";
 
         static void Main(string[] args)

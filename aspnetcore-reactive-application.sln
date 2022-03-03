@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "message-driven", "message-driven", "{ACD548A7-1537-4C6C-9E5F-E7CAF5D77C58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "message-channel", "message-channel", "{9A9383E8-C784-4632-BFB6-10077FC20471}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "point-to-point", "point-to-point", "{54762F98-D0BA-45C8-8997-9A09B6D11897}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rabbitmq-sample", "rabbitmq-sample", "{FBB9C58B-5FC4-4370-B326-8CCAA88DE40D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "producer", "message-driven\message-channel\point-to-point\rabbitmq-sample\producer\producer.csproj", "{02A5295D-2538-4BD3-AB7B-55715ED6FFBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "consumer", "message-driven\message-channel\point-to-point\rabbitmq-sample\consumer\consumer.csproj", "{C3451AB4-8400-42B6-8036-0D0BC47A2FCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02A5295D-2538-4BD3-AB7B-55715ED6FFBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A5295D-2538-4BD3-AB7B-55715ED6FFBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A5295D-2538-4BD3-AB7B-55715ED6FFBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A5295D-2538-4BD3-AB7B-55715ED6FFBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3451AB4-8400-42B6-8036-0D0BC47A2FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3451AB4-8400-42B6-8036-0D0BC47A2FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3451AB4-8400-42B6-8036-0D0BC47A2FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3451AB4-8400-42B6-8036-0D0BC47A2FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9A9383E8-C784-4632-BFB6-10077FC20471} = {ACD548A7-1537-4C6C-9E5F-E7CAF5D77C58}
+		{54762F98-D0BA-45C8-8997-9A09B6D11897} = {9A9383E8-C784-4632-BFB6-10077FC20471}
+		{FBB9C58B-5FC4-4370-B326-8CCAA88DE40D} = {54762F98-D0BA-45C8-8997-9A09B6D11897}
+		{02A5295D-2538-4BD3-AB7B-55715ED6FFBB} = {FBB9C58B-5FC4-4370-B326-8CCAA88DE40D}
+		{C3451AB4-8400-42B6-8036-0D0BC47A2FCF} = {FBB9C58B-5FC4-4370-B326-8CCAA88DE40D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8BFE0D08-A7A7-4FA8-8B62-ACEDCEE37A21}
+	EndGlobalSection
+EndGlobal
