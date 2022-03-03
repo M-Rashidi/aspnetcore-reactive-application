@@ -15,6 +15,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "producer", "message-driven\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "consumer", "message-driven\message-channel\point-to-point\rabbitmq-sample\consumer\consumer.csproj", "{C3451AB4-8400-42B6-8036-0D0BC47A2FCF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "publish-subscribe", "publish-subscribe", "{DB0783B1-FF00-4ED3-A14D-996B36CB8C04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "producer", "message-driven\message-channel\publish-subscribe\rabbitmq-sample\producer\producer.csproj", "{8166A53E-B067-4C38-83ED-17833F42D705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "consumer", "message-driven\message-channel\publish-subscribe\rabbitmq-sample\consumer\consumer.csproj", "{EF01ECF3-672B-422B-B3F3-4CDDC6C57E49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rabbitmq-sample", "rabbitmq-sample", "{44B359B7-C157-4766-B4A4-4F5C7FA352FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +37,14 @@ Global
 		{C3451AB4-8400-42B6-8036-0D0BC47A2FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3451AB4-8400-42B6-8036-0D0BC47A2FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3451AB4-8400-42B6-8036-0D0BC47A2FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8166A53E-B067-4C38-83ED-17833F42D705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8166A53E-B067-4C38-83ED-17833F42D705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8166A53E-B067-4C38-83ED-17833F42D705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8166A53E-B067-4C38-83ED-17833F42D705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF01ECF3-672B-422B-B3F3-4CDDC6C57E49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF01ECF3-672B-422B-B3F3-4CDDC6C57E49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF01ECF3-672B-422B-B3F3-4CDDC6C57E49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF01ECF3-672B-422B-B3F3-4CDDC6C57E49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +55,10 @@ Global
 		{FBB9C58B-5FC4-4370-B326-8CCAA88DE40D} = {54762F98-D0BA-45C8-8997-9A09B6D11897}
 		{02A5295D-2538-4BD3-AB7B-55715ED6FFBB} = {FBB9C58B-5FC4-4370-B326-8CCAA88DE40D}
 		{C3451AB4-8400-42B6-8036-0D0BC47A2FCF} = {FBB9C58B-5FC4-4370-B326-8CCAA88DE40D}
+		{DB0783B1-FF00-4ED3-A14D-996B36CB8C04} = {9A9383E8-C784-4632-BFB6-10077FC20471}
+		{8166A53E-B067-4C38-83ED-17833F42D705} = {44B359B7-C157-4766-B4A4-4F5C7FA352FD}
+		{EF01ECF3-672B-422B-B3F3-4CDDC6C57E49} = {44B359B7-C157-4766-B4A4-4F5C7FA352FD}
+		{44B359B7-C157-4766-B4A4-4F5C7FA352FD} = {DB0783B1-FF00-4ED3-A14D-996B36CB8C04}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BFE0D08-A7A7-4FA8-8B62-ACEDCEE37A21}
