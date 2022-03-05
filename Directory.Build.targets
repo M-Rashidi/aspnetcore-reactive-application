@@ -1,5 +1,6 @@
 <Project>
 	<ItemGroup>
 		<PackageReference Include="RabbitMQ.Client" Version="6.2.4" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	</ItemGroup>
 </Project>
