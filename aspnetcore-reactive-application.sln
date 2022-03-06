@@ -31,6 +31,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "producer", "message-driven\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "consumer", "message-driven\message-channel\datatype-channel\rabbitmq-sample\consumer\consumer.csproj", "{7CE84D76-E700-4C3E-9364-56566ADE9E53}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "invalid-message", "invalid-message", "{39CF4C9F-35A9-4E3E-A390-8F7371F10CA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rabbitmq-sample", "rabbitmq-sample", "{B2B6F985-E152-47F3-8B4C-8B8A576B04AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "producer", "message-driven\message-channel\invalid-message\rabbitmq-sample\producer\producer.csproj", "{346842CB-45C5-48D1-8CBA-BE044740F222}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "consumer", "message-driven\message-channel\invalid-message\rabbitmq-sample\consumer\consumer.csproj", "{42F4FF9D-E1EA-4363-B717-1E7CF8DDBC2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +69,14 @@ Global
 		{7CE84D76-E700-4C3E-9364-56566ADE9E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CE84D76-E700-4C3E-9364-56566ADE9E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CE84D76-E700-4C3E-9364-56566ADE9E53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{346842CB-45C5-48D1-8CBA-BE044740F222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{346842CB-45C5-48D1-8CBA-BE044740F222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{346842CB-45C5-48D1-8CBA-BE044740F222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{346842CB-45C5-48D1-8CBA-BE044740F222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F4FF9D-E1EA-4363-B717-1E7CF8DDBC2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F4FF9D-E1EA-4363-B717-1E7CF8DDBC2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F4FF9D-E1EA-4363-B717-1E7CF8DDBC2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F4FF9D-E1EA-4363-B717-1E7CF8DDBC2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +95,10 @@ Global
 		{95329042-5859-4E74-8ECF-915D6DEC56E0} = {C53CE628-9AC0-47D1-86C0-602CB764D0ED}
 		{947F7EC7-0B2F-431A-B311-D86DD3B25CE6} = {95329042-5859-4E74-8ECF-915D6DEC56E0}
 		{7CE84D76-E700-4C3E-9364-56566ADE9E53} = {95329042-5859-4E74-8ECF-915D6DEC56E0}
+		{39CF4C9F-35A9-4E3E-A390-8F7371F10CA8} = {9A9383E8-C784-4632-BFB6-10077FC20471}
+		{B2B6F985-E152-47F3-8B4C-8B8A576B04AE} = {39CF4C9F-35A9-4E3E-A390-8F7371F10CA8}
+		{346842CB-45C5-48D1-8CBA-BE044740F222} = {B2B6F985-E152-47F3-8B4C-8B8A576B04AE}
+		{42F4FF9D-E1EA-4363-B717-1E7CF8DDBC2A} = {B2B6F985-E152-47F3-8B4C-8B8A576B04AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BFE0D08-A7A7-4FA8-8B62-ACEDCEE37A21}

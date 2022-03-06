@@ -26,6 +26,11 @@ namespace producer
 
             var messages = new List<Event>
             {
+                new ProductQueries()
+                {
+                    Id = Guid.NewGuid(),
+                    Type = "Invalid"
+                },
                 new ProductQueries(),
                 new ProductPurchase(),
                 new ProductQuote()
