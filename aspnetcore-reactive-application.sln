@@ -3,7 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "message-driven", "message-driven", "{ACD548A7-1537-4C6C-9E5F-E7CAF5D77C58}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "reactive-application", "reactive-application", "{ACD548A7-1537-4C6C-9E5F-E7CAF5D77C58}"
+	ProjectSection(SolutionItems) = preProject
+		reactive-application\Directory.Build.targets = reactive-application\Directory.Build.targets
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "message-channel", "message-channel", "{9A9383E8-C784-4632-BFB6-10077FC20471}"
 EndProject
@@ -11,15 +14,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "point-to-point", "point-to-
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rabbitmq-sample", "rabbitmq-sample", "{FBB9C58B-5FC4-4370-B326-8CCAA88DE40D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "producer", "message-driven\message-channel\point-to-point\rabbitmq-sample\producer\producer.csproj", "{02A5295D-2538-4BD3-AB7B-55715ED6FFBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "producer", "reactive-application\message-driven\message-channel\point-to-point\rabbitmq-sample\producer\producer.csproj", "{02A5295D-2538-4BD3-AB7B-55715ED6FFBB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "consumer", "message-driven\message-channel\point-to-point\rabbitmq-sample\consumer\consumer.csproj", "{C3451AB4-8400-42B6-8036-0D0BC47A2FCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "consumer", "reactive-application\message-driven\message-channel\point-to-point\rabbitmq-sample\consumer\consumer.csproj", "{C3451AB4-8400-42B6-8036-0D0BC47A2FCF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "publish-subscribe", "publish-subscribe", "{DB0783B1-FF00-4ED3-A14D-996B36CB8C04}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "producer", "message-driven\message-channel\publish-subscribe\rabbitmq-sample\producer\producer.csproj", "{8166A53E-B067-4C38-83ED-17833F42D705}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "producer", "reactive-application\message-driven\message-channel\publish-subscribe\rabbitmq-sample\producer\producer.csproj", "{8166A53E-B067-4C38-83ED-17833F42D705}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "consumer", "message-driven\message-channel\publish-subscribe\rabbitmq-sample\consumer\consumer.csproj", "{EF01ECF3-672B-422B-B3F3-4CDDC6C57E49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "consumer", "reactive-application\message-driven\message-channel\publish-subscribe\rabbitmq-sample\consumer\consumer.csproj", "{EF01ECF3-672B-422B-B3F3-4CDDC6C57E49}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rabbitmq-sample", "rabbitmq-sample", "{44B359B7-C157-4766-B4A4-4F5C7FA352FD}"
 EndProject
@@ -27,17 +30,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "datatype-channel", "datatyp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rabbitmq-sample", "rabbitmq-sample", "{95329042-5859-4E74-8ECF-915D6DEC56E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "producer", "message-driven\message-channel\datatype-channel\rabbitmq-sample\producer\producer.csproj", "{947F7EC7-0B2F-431A-B311-D86DD3B25CE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "producer", "reactive-application\message-driven\message-channel\datatype-channel\rabbitmq-sample\producer\producer.csproj", "{947F7EC7-0B2F-431A-B311-D86DD3B25CE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "consumer", "message-driven\message-channel\datatype-channel\rabbitmq-sample\consumer\consumer.csproj", "{7CE84D76-E700-4C3E-9364-56566ADE9E53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "consumer", "reactive-application\message-driven\message-channel\datatype-channel\rabbitmq-sample\consumer\consumer.csproj", "{7CE84D76-E700-4C3E-9364-56566ADE9E53}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "invalid-message", "invalid-message", "{39CF4C9F-35A9-4E3E-A390-8F7371F10CA8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rabbitmq-sample", "rabbitmq-sample", "{B2B6F985-E152-47F3-8B4C-8B8A576B04AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "producer", "message-driven\message-channel\invalid-message\rabbitmq-sample\producer\producer.csproj", "{346842CB-45C5-48D1-8CBA-BE044740F222}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "producer", "reactive-application\message-driven\message-channel\invalid-message\rabbitmq-sample\producer\producer.csproj", "{346842CB-45C5-48D1-8CBA-BE044740F222}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "consumer", "message-driven\message-channel\invalid-message\rabbitmq-sample\consumer\consumer.csproj", "{42F4FF9D-E1EA-4363-B717-1E7CF8DDBC2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "consumer", "reactive-application\message-driven\message-channel\invalid-message\rabbitmq-sample\consumer\consumer.csproj", "{42F4FF9D-E1EA-4363-B717-1E7CF8DDBC2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "message-driven", "message-driven", "{C860658D-ABDE-47EE-8788-4F0A366DFECC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -82,7 +87,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{9A9383E8-C784-4632-BFB6-10077FC20471} = {ACD548A7-1537-4C6C-9E5F-E7CAF5D77C58}
+		{9A9383E8-C784-4632-BFB6-10077FC20471} = {C860658D-ABDE-47EE-8788-4F0A366DFECC}
 		{54762F98-D0BA-45C8-8997-9A09B6D11897} = {9A9383E8-C784-4632-BFB6-10077FC20471}
 		{FBB9C58B-5FC4-4370-B326-8CCAA88DE40D} = {54762F98-D0BA-45C8-8997-9A09B6D11897}
 		{02A5295D-2538-4BD3-AB7B-55715ED6FFBB} = {FBB9C58B-5FC4-4370-B326-8CCAA88DE40D}
@@ -99,6 +104,7 @@ Global
 		{B2B6F985-E152-47F3-8B4C-8B8A576B04AE} = {39CF4C9F-35A9-4E3E-A390-8F7371F10CA8}
 		{346842CB-45C5-48D1-8CBA-BE044740F222} = {B2B6F985-E152-47F3-8B4C-8B8A576B04AE}
 		{42F4FF9D-E1EA-4363-B717-1E7CF8DDBC2A} = {B2B6F985-E152-47F3-8B4C-8B8A576B04AE}
+		{C860658D-ABDE-47EE-8788-4F0A366DFECC} = {ACD548A7-1537-4C6C-9E5F-E7CAF5D77C58}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BFE0D08-A7A7-4FA8-8B62-ACEDCEE37A21}
