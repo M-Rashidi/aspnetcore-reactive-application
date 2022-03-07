@@ -29,8 +29,6 @@ namespace producer
             var routingKey = "";
 
             channel.BasicPublish(exchangeName, routingKey, null, data);
-
-            ;
         }
 
         private static string GetMessage(string[] args)

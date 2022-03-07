@@ -26,13 +26,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "consumer", "reactive-applic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rabbitmq-sample", "rabbitmq-sample", "{44B359B7-C157-4766-B4A4-4F5C7FA352FD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "datatype-channel", "datatype-channel", "{C53CE628-9AC0-47D1-86C0-602CB764D0ED}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "datatype", "datatype", "{C53CE628-9AC0-47D1-86C0-602CB764D0ED}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rabbitmq-sample", "rabbitmq-sample", "{95329042-5859-4E74-8ECF-915D6DEC56E0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "producer", "reactive-application\message-driven\message-channel\datatype-channel\rabbitmq-sample\producer\producer.csproj", "{947F7EC7-0B2F-431A-B311-D86DD3B25CE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "producer", "reactive-application\message-driven\message-channel\datatype\rabbitmq-sample\producer\producer.csproj", "{947F7EC7-0B2F-431A-B311-D86DD3B25CE6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "consumer", "reactive-application\message-driven\message-channel\datatype-channel\rabbitmq-sample\consumer\consumer.csproj", "{7CE84D76-E700-4C3E-9364-56566ADE9E53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "consumer", "reactive-application\message-driven\message-channel\datatype\rabbitmq-sample\consumer\consumer.csproj", "{7CE84D76-E700-4C3E-9364-56566ADE9E53}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "invalid-message", "invalid-message", "{39CF4C9F-35A9-4E3E-A390-8F7371F10CA8}"
 EndProject
@@ -43,6 +43,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "consumer", "reactive-application\message-driven\message-channel\invalid-message\rabbitmq-sample\consumer\consumer.csproj", "{42F4FF9D-E1EA-4363-B717-1E7CF8DDBC2A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "message-driven", "message-driven", "{C860658D-ABDE-47EE-8788-4F0A366DFECC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dead-letter", "dead-letter", "{012DE817-2723-4FF3-806C-5FA2CF0C9393}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rabbitmq-sample", "rabbitmq-sample", "{10202758-BCEA-4A88-9268-FB3D0AAEDCDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "producer", "reactive-application\message-driven\message-channel\dead-letter\producer\producer.csproj", "{58527A06-49A6-41E3-B371-3F7A5743672B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -82,6 +88,10 @@ Global
 		{42F4FF9D-E1EA-4363-B717-1E7CF8DDBC2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42F4FF9D-E1EA-4363-B717-1E7CF8DDBC2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42F4FF9D-E1EA-4363-B717-1E7CF8DDBC2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58527A06-49A6-41E3-B371-3F7A5743672B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58527A06-49A6-41E3-B371-3F7A5743672B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58527A06-49A6-41E3-B371-3F7A5743672B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58527A06-49A6-41E3-B371-3F7A5743672B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,6 +115,9 @@ Global
 		{346842CB-45C5-48D1-8CBA-BE044740F222} = {B2B6F985-E152-47F3-8B4C-8B8A576B04AE}
 		{42F4FF9D-E1EA-4363-B717-1E7CF8DDBC2A} = {B2B6F985-E152-47F3-8B4C-8B8A576B04AE}
 		{C860658D-ABDE-47EE-8788-4F0A366DFECC} = {ACD548A7-1537-4C6C-9E5F-E7CAF5D77C58}
+		{012DE817-2723-4FF3-806C-5FA2CF0C9393} = {9A9383E8-C784-4632-BFB6-10077FC20471}
+		{10202758-BCEA-4A88-9268-FB3D0AAEDCDC} = {012DE817-2723-4FF3-806C-5FA2CF0C9393}
+		{58527A06-49A6-41E3-B371-3F7A5743672B} = {10202758-BCEA-4A88-9268-FB3D0AAEDCDC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BFE0D08-A7A7-4FA8-8B62-ACEDCEE37A21}
