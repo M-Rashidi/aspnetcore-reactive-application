@@ -9,7 +9,7 @@ namespace consumer
         private static IConnection? _connection;
         private static IModel? _channel;
         private static readonly ManualResetEvent _resetEvent = new ManualResetEvent(false);
-        private static readonly string url = "amqp://guest:guest@localhost/%2f";
+        private static readonly string url = "amqps://zmkoitrj:X5Pa_v8emJMUHzzbiL17QNoh0j52HvUo@baboon.rmq.cloudamqp.com/zmkoitrj";
 
         static void Main(string[] args)
         {
@@ -22,15 +22,15 @@ namespace consumer
             _channel = _connection.CreateModel();
 
 
-            var queueName = "point-to-point-queue";
-            bool durable = false;
+            var queueName = "task_queue";
+            bool durable = true;
             bool exclusive = false;
             bool autoDelete = true;
 
             _channel.QueueDeclare(queueName, durable, exclusive, autoDelete, null);
 
-            var consumer = new EventingBasicConsumer(_channel);
 
+            var consumer = new EventingBasicConsumer(_channel);
 
             consumer.Received += (model, deliveryEventArgs) =>
             {
@@ -39,10 +39,10 @@ namespace consumer
                 var message = Encoding.UTF8.GetString(body);
                 Console.WriteLine("** Received message: {0} by Consumer thread **", message);
 
-                _channel.BasicAck(deliveryEventArgs.DeliveryTag, false);
+                //_channel.BasicAck(deliveryEventArgs.DeliveryTag, false);
             };
 
-            _ = _channel.BasicConsume(consumer, queueName);
+            _ = _channel.BasicConsume(queueName, false, consumer);
 
             _resetEvent.WaitOne();
             _channel?.Close();
