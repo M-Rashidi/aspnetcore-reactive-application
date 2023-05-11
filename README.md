@@ -1,14 +1,29 @@
-# Reactive Application In Asp.NET Core
+# Welcome to the Reactive Systems implementation examples in .NET!
 
-the Reactive Manifesto describes how to deign and architect Reactive systems according to your needs. It describes the four traits of Reactive systems. Reactive Manifest is currently at v.2.0, which was initially published on September 16, 2014. The manifesto is published at http://www.reactivemanifesto.org/.
-
-*Reactive Systems are:*
-
-* <a name="Responsive"></a>**Responsive**: The system responds in a timely manner if at all possible. Responsiveness is the cornerstone of usability and utility, but more than that, responsiveness means that problems may be detected quickly and dealt with effectively. Responsive systems focus on providing rapid and consistent response times, establishing reliable upper bounds so they deliver a consistent quality of service. This consistent behavior in turn simplifies error handling, builds end user confidence, and encourages further interaction. 
-* <a name="Resilient"></a>**Resilient**: The system stays responsive in the face of failure. This applies not only to highly available, mission-critical systems any system that is not resilient will be unresponsive after a failure. Resilience is achieved by replication, containment, isolation and delegation. Failures are contained within each component, isolating components from each other and thereby ensuring that parts of the system can fail and recover without compromising the system as a whole. Recovery of each component is delegated to another (external) component and high availability is ensured by replication where necessary. The client of a component is not burdened with handling its failures.
-* <a name="Elastic"></a>**Elastic**: The system stays responsive under varying workload. Reactive Systems can react to changes in the input rate by increasing or decreasing the resources allocated to service these inputs. This implies designs that have no contention points or central bottlenecks, resulting in the ability to shard or replicate components and distribute inputs among them. Reactive Systems support predictive, as well as Reactive, scaling algorithms by providing relevant live performance measures. They achieve elasticity in a cost-effective way on commodity hardware and software platforms.
-* <a name="Message-Driven"></a>**Message Driven**: Reactive Systems rely on asynchronous message-passing to establish a boundary between components that ensures loose coupling, isolation, and location transparency. This boundary also provides the means to delegate failures as messages. Employing explicit message-passing enables load management, elasticity, and flow control by shaping and monitoring the message queues in the system and applying back-pressure when necessary. Location-transparent messaging as a means of communication makes it possible for the management of failure to work with the same constructs and semantics across a cluster or within a single host. Non-blocking communication allows recipients to only consume resources while active, leading to less system overhead.
-
+This repository provides practical examples of how Reactive Systems can be implemented in a way that is efficient, scalable, and resilient, using the .NET framework. According to the [Reactive Manifesto](https://www.reactivemanifesto.org/), Reactive Systems are **"Responsive, Resilient, Elastic, and Message-Driven."** This means that they are designed to handle a large number of events and inputs in a timely and responsive manner, while also being able to adapt to changes in the environment and recover from failures.
 
 ---
-![reactive-traits](./reactive-traits.svg)
+<p align="center">
+    <img width="600" src="./reactive-traits.svg" alt="[reactive-traits">
+</p>
+
+
+### Examples Based on the Pillars of Reactive Systems:
+
+The examples provided in this repository are carefully crafted to align with the four main pillars of Reactive Systems: **Responsiveness, Resilience, Elasticity, and Message-Driven** architecture. Each example demonstrates how these pillars can be incorporated into the development of reactive systems using the .NET framework.
+
+***You can explore the examples in the following locations:***
+
+•	[Responsiveness Examples](https://github.com/M-Rashidi/aspnetcore-reactive-application/tree/main/responsive): These examples showcase techniques for building highly responsive systems that can quickly react to incoming events and inputs, ensuring smooth and timely user experiences.
+
+•	[Resilience Examples](https://github.com/M-Rashidi/aspnetcore-reactive-application/tree/main/resilient): In these examples, you'll discover strategies to build resilient systems that can gracefully handle failures and adapt to unexpected scenarios, ensuring the continuity of critical functionalities.
+
+•	[Elasticity Examples](https://github.com/M-Rashidi/aspnetcore-reactive-application/tree/main/elastic): Explore these examples to learn how to design systems that can dynamically scale up or down to handle varying workloads, allowing your applications to efficiently utilize available resources.
+
+•	[Message-Driven Examples](https://github.com/M-Rashidi/aspnetcore-reactive-application/tree/main/message-driven): these examples dive into the benefits of a message-driven architecture, showcasing how systems can effectively process and communicate messages between components, enabling loose coupling and flexibility.
+
+Each example provides practical insights and code snippets to guide you through the implementation process, allowing you to gain a deeper understanding of building reactive systems that excel in responsiveness, resilience, elasticity, and message-driven communication.
+Feel free to explore these examples, experiment with the code, and adapt the concepts to suit your specific project needs. We encourage your active participation and contributions to help expand the knowledge base and foster a vibrant community around reactive systems in the .NET ecosystem.
+
+
+
