@@ -5,10 +5,10 @@ This repository is dedicated to showcasing a collection of message-driven patter
 "Reactive Messaging Patterns with the Actor Model: Applications and Integration in Scala and Akka". These patterns provide proven solutions to common
 integration challenges and promote scalable, resilient, and highly performant applications.
 
-The goal of this repository is to implement these patterns using different tools, such as RabbitMQ, Akka, Apache Kafka, and more, all within
+The goal of this repository is to implement these patterns using different tools, such as [RabbitMQ](https://www.rabbitmq.com/)
+, [Akka.NET](https://getakka.net/), [Apache Kafka](https://kafka.apache.org/), and more, all within
 the .NET framework. By providing implementations with various messaging technologies, we aim to cater to different application requirements and developer
 preferences.
-
 Let's explore a few of the message-driven patterns included in this repository:
 
 • [Messaging Channels Examples](https://github.com/M-Rashidi/aspnetcore-reactive-application/tree/main/message-driven/message-channel):
